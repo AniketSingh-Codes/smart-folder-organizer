@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=Smart Folder Organizer
+GenericName=File & Folder Organizer
+Comment=Automatically categorize and clean up files by type, keyword, and content
+Exec=smart-folder-organizer %u
+Icon=com.aniket.SmartFolderOrganizer
+Terminal=false
+Type=Application
+Categories=Utility;FileTools;
+Keywords=organize;clean;sort;files;downloads;desktop;classifier;
+MimeType=inode/directory;
+StartupNotify=true
+Actions=scan-downloads;scan-desktop;
+
+[Desktop Action scan-downloads]
+Name=Scan Downloads
+Exec=smart-folder-organizer --downloads
+
+[Desktop Action scan-desktop]
+Name=Scan Desktop
+Exec=smart-folder-organizer --desktop

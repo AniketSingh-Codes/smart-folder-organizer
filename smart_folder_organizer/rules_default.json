@@ -1,0 +1,149 @@
+{
+  "categories": {
+    "Images": {
+      "extensions": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp", ".tiff", ".tif", ".heic", ".ico", ".raw", ".psd"],
+      "mime_prefixes": ["image/"],
+      "icon": "image-x-generic-symbolic"
+    },
+    "Videos": {
+      "extensions": [".mp4", ".mkv", ".mov", ".avi", ".webm", ".flv", ".wmv", ".m4v", ".3gp"],
+      "mime_prefixes": ["video/"],
+      "icon": "video-x-generic-symbolic"
+    },
+    "Audio": {
+      "extensions": [".mp3", ".wav", ".flac", ".aac", ".ogg", ".m4a", ".opus", ".wma", ".aiff"],
+      "mime_prefixes": ["audio/"],
+      "icon": "audio-x-generic-symbolic"
+    },
+    "Documents": {
+      "extensions": [".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".md", ".pages", ".epub", ".mobi", ".tex"],
+      "mime_prefixes": ["text/", "application/pdf", "application/msword", "application/vnd.oasis.opendocument.text"],
+      "icon": "x-office-document-symbolic"
+    },
+    "Spreadsheets": {
+      "extensions": [".xlsx", ".xls", ".csv", ".ods", ".tsv", ".numbers", ".xlsm"],
+      "mime_prefixes": ["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.spreadsheetml", "text/csv"],
+      "icon": "x-office-spreadsheet-symbolic"
+    },
+    "Presentations": {
+      "extensions": [".pptx", ".ppt", ".odp", ".key"],
+      "mime_prefixes": ["application/vnd.ms-powerpoint", "application/vnd.openxmlformats-officedocument.presentationml"],
+      "icon": "x-office-presentation-symbolic"
+    },
+    "Archives": {
+      "extensions": [".zip", ".tar", ".gz", ".bz2", ".xz", ".7z", ".rar", ".tgz", ".zst", ".tar.gz", ".tar.xz"],
+      "mime_prefixes": ["application/zip", "application/x-tar", "application/x-compressed", "application/x-7z-compressed"],
+      "icon": "package-x-generic-symbolic"
+    },
+    "Code": {
+      "extensions": [".py", ".js", ".ts", ".html", ".css", ".json", ".yaml", ".yml", ".xml", ".c", ".cpp", ".h", ".hpp", ".java", ".rs", ".go", ".sh", ".bash", ".sql", ".php", ".rb", ".swift", ".kt"],
+      "mime_prefixes": ["text/x-", "application/json", "application/xml", "application/javascript"],
+      "icon": "text-x-script-symbolic"
+    },
+    "Installers": {
+      "extensions": [".rpm", ".deb", ".AppImage", ".flatpakref", ".flatpakrepo", ".exe", ".msi", ".dmg", ".pkg", ".apk"],
+      "mime_prefixes": ["application/x-rpm", "application/vnd.debian.binary-package", "application/x-msdos-program"],
+      "icon": "system-software-install-symbolic"
+    },
+    "ISOs": {
+      "extensions": [".iso", ".img", ".vdi", ".vmdk", ".qcow2"],
+      "mime_prefixes": ["application/x-cd-image", "application/x-raw-disk-image"],
+      "icon": "media-optical-symbolic"
+    },
+    "Fonts": {
+      "extensions": [".ttf", ".otf", ".woff", ".woff2", ".eot"],
+      "mime_prefixes": ["font/"],
+      "icon": "font-x-generic-symbolic"
+    },
+    "Other": {
+      "extensions": [],
+      "mime_prefixes": [],
+      "icon": "folder-symbolic"
+    }
+  },
+  "keyword_rules": [
+    {
+      "name": "Invoices and Receipts",
+      "keywords": ["invoice", "bill", "receipt", "order_receipt", "factura", "quittung"],
+      "category": "Documents",
+      "subcategory": "Invoices"
+    },
+    {
+      "name": "Resumes and CVs",
+      "keywords": ["resume", "cv", "curriculum_vitae", "lebenslauf"],
+      "category": "Documents",
+      "subcategory": "Resumes"
+    },
+    {
+      "name": "Bank Statements & Finance",
+      "keywords": ["statement", "bank", "account_statement", "payslip", "salary"],
+      "category": "Documents",
+      "subcategory": "Finance"
+    },
+    {
+      "name": "Tickets & Bookings",
+      "keywords": ["ticket", "boarding", "flight", "boardingpass", "reservation", "booking"],
+      "category": "Documents",
+      "subcategory": "Travel"
+    },
+    {
+      "name": "Contracts & Agreements",
+      "keywords": ["contract", "agreement", "nda", "terms_of_service"],
+      "category": "Documents",
+      "subcategory": "Contracts"
+    },
+    {
+      "name": "Academic & Education",
+      "keywords": ["assignment", "homework", "lecture", "syllabus", "exam", "thesis"],
+      "category": "Documents",
+      "subcategory": "Academic"
+    },
+    {
+      "name": "Screenshots",
+      "keywords": ["screenshot", "screen_shot", "capture", "schermata"],
+      "category": "Images",
+      "subcategory": "Screenshots"
+    },
+    {
+      "name": "Wallpapers",
+      "keywords": ["wallpaper", "background", "desktop_bg"],
+      "category": "Images",
+      "subcategory": "Wallpapers"
+    }
+  ],
+  "content_rules": [
+    {
+      "name": "Invoice Content",
+      "keywords": ["invoice number", "amount due", "bill to", "tax invoice", "total due", "payment terms", "due date"],
+      "category": "Documents",
+      "subcategory": "Invoices"
+    },
+    {
+      "name": "Resume Content",
+      "keywords": ["curriculum vitae", "work experience", "education background", "skills & expertise", "employment history"],
+      "category": "Documents",
+      "subcategory": "Resumes"
+    },
+    {
+      "name": "Financial Statement Content",
+      "keywords": ["account statement", "closing balance", "opening balance", "transaction history", "bank statement"],
+      "category": "Documents",
+      "subcategory": "Finance"
+    },
+    {
+      "name": "Academic Paper Content",
+      "keywords": ["abstract", "methodology", "literature review", "references cited", "course syllabus"],
+      "category": "Documents",
+      "subcategory": "Academic"
+    }
+  ],
+  "ignored_patterns": [
+    ".*",
+    "*.part",
+    "*.crdownload",
+    "*.tmp",
+    "*.download",
+    "*.swp",
+    "Organized"
+  ]
+}

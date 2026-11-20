@@ -1,0 +1,34 @@
+{
+  "app-id": "com.aniket.SmartFolderOrganizer",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "45",
+  "sdk": "org.gnome.Sdk",
+  "command": "smart-folder-organizer",
+  "finish-args": [
+    "--share=ipc",
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--filesystem=xdg-download",
+    "--filesystem=xdg-desktop",
+    "--filesystem=home"
+  ],
+  "modules": [
+    {
+      "name": "smart-folder-organizer",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --no-build-isolation --no-deps --prefix=${FLATPAK_DEST} .",
+        "install -Dm644 data/com.aniket.SmartFolderOrganizer.desktop ${FLATPAK_DEST}/share/applications/com.aniket.SmartFolderOrganizer.desktop",
+        "install -Dm644 data/com.aniket.SmartFolderOrganizer.metainfo.xml ${FLATPAK_DEST}/share/metainfo/com.aniket.SmartFolderOrganizer.metainfo.xml",
+        "install -Dm644 data/icons/hicolor/scalable/apps/com.aniket.SmartFolderOrganizer.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/com.aniket.SmartFolderOrganizer.svg",
+        "install -Dm644 data/icons/hicolor/scalable/apps/com.aniket.SmartFolderOrganizer-symbolic.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/com.aniket.SmartFolderOrganizer-symbolic.svg"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ]
+    }
+  ]
+}

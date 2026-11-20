@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="folderBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c71d8"/>
+      <stop offset="100%" stop-color="#1a5fb4"/>
+    </linearGradient>
+    <linearGradient id="folderFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3584e4"/>
+      <stop offset="100%" stop-color="#1c71d8"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#deddda"/>
+    </linearGradient>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d32d"/>
+      <stop offset="100%" stop-color="#e5a50a"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Folder Back Plate -->
+  <path d="M 16 30 C 16 26 19 23 23 23 L 49 23 C 53 23 57 26 59 30 L 64 36 L 105 36 C 109 36 112 39 112 43 L 112 96 C 112 101 109 104 105 104 L 23 104 C 19 104 16 101 16 96 Z" fill="url(#folderBack)"/>
+
+  <!-- Document 1 (Left Angled) -->
+  <g transform="translate(32, 28) rotate(-8)">
+    <rect x="0" y="0" width="36" height="48" rx="4" fill="url(#cardGrad)" filter="url(#dropShadow)"/>
+    <rect x="6" y="8" width="24" height="4" rx="2" fill="#9a9996"/>
+    <rect x="6" y="16" width="18" height="3" rx="1.5" fill="#c0bfbc"/>
+    <rect x="6" y="22" width="20" height="3" rx="1.5" fill="#c0bfbc"/>
+  </g>
+
+  <!-- Document 2 (Right Angled) -->
+  <g transform="translate(62, 26) rotate(6)">
+    <rect x="0" y="0" width="36" height="48" rx="4" fill="#62a0ea" filter="url(#dropShadow)"/>
+    <circle cx="18" cy="20" r="8" fill="#ffffff" opacity="0.9"/>
+    <polygon points="12,38 24,30 30,38" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <!-- Folder Front Pocket -->
+  <path d="M 16 48 C 16 44 19 41 23 41 L 105 41 C 109 41 112 44 112 48 L 112 96 C 112 101 109 104 105 104 L 23 104 C 19 104 16 101 16 96 Z" fill="url(#folderFront)" filter="url(#dropShadow)"/>
+
+  <!-- Sorting Categorization Badge / Chip -->
+  <rect x="36" y="60" width="56" height="30" rx="15" fill="#ffffff" opacity="0.95" filter="url(#dropShadow)"/>
+  
+  <!-- Colored Category Dots -->
+  <circle cx="50" cy="75" r="5" fill="#e01b24"/>
+  <circle cx="64" cy="75" r="5" fill="#33d17a"/>
+  <circle cx="78" cy="75" r="5" fill="#f6d32d"/>
+
+  <!-- Smart / AI Magic Star -->
+  <path d="M 100 20 Q 100 28 108 28 Q 100 28 100 36 Q 100 28 92 28 Q 100 28 100 20 Z" fill="url(#sparkleGrad)"/>
+  <path d="M 110 38 Q 110 42 114 42 Q 110 42 110 46 Q 110 42 106 42 Q 110 42 110 38 Z" fill="url(#sparkleGrad)"/>
+</svg>

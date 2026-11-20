@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-folder-organizer"
+version = "1.0.0"
+description = "Safe, previewable, and content-aware folder organizer for GNOME"
+readme = "README.md"
+authors = [{ name = "Aniket Singh" }]
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.10"
+dependencies = [
+    "PyGObject>=3.46.0",
+]
+
+[project.optional-dependencies]
+content = [
+    "pypdf>=4.0.0",
+    "python-docx>=1.1.0",
+]
+dev = [
+    "pytest>=7.4.0",
+]
+
+[project.scripts]
+smart-folder-organizer = "smart_folder_organizer.main:main"
+
+[tool.setuptools.packages.find]
+include = ["smart_folder_organizer*"]
+
+[tool.setuptools.package-data]
+smart_folder_organizer = ["rules_default.json"]

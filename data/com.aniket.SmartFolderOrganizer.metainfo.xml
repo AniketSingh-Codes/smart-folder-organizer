@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.aniket.SmartFolderOrganizer</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Smart Folder Organizer</name>
+  <summary>Automatically categorize and organize files into clean subfolders</summary>
+  <description>
+    <p>
+      Smart Folder Organizer scans folders such as Downloads and Desktop, analyzes files by
+      extension, MIME type, filename keywords, and optional document text inspection, and sorts
+      them into tidy, categorized directories.
+    </p>
+    <p>Key features include:</p>
+    <ul>
+      <li>Multi-layer classification engine (extension, filename keywords, and content-aware analysis)</li>
+      <li>Interactive preview list with checkboxes before moving any file</li>
+      <li>Safe collision resolution with automatic unique renaming (never overwriting)</li>
+      <li>Instant undo support to restore files to their original paths</li>
+      <li>CLI mode for terminal workflows and automated scheduling</li>
+      <li>Built with GTK 4 and Libadwaita following the GNOME Human Interface Guidelines</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">com.aniket.SmartFolderOrganizer.desktop</launchable>
+  <categories>
+    <category>Utility</category>
+    <category>FileTools</category>
+  </categories>
+  <developer id="com.aniket">
+    <name>Aniket Singh</name>
+  </developer>
+  <url type="homepage">https://github.com/aniket/smart-folder-organizer</url>
+  <url type="bugtracker">https://github.com/aniket/smart-folder-organizer/issues</url>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-11-14">
+      <description>
+        <p>Initial release for Fedora Workstation and GNOME 45.</p>
+      </description>
+    </release>
+  </releases>
+</component>
